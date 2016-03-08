@@ -1,0 +1,36 @@
+.jcarousel-skin-tango .jcarousel-container {
+	margin-top:34px;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    width: 590px;
+}
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width:  590px;
+    height: 225px;
+	overflow:hidden;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+    width: 140px;
+	height: 225px;
+	margin-right:10px;
+}
+.jcarousel-skin-tango .jcarousel-item img{ margin-bottom:26px;}
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-tango .jcarousel-next-horizontal{
+    right: 0px;
+    background:url(../images/calendar_next.png) no-repeat;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+    width: 32px;
+	right:33px;
+    height: 32px;
+    background:url(../images/calendar_prev.png) no-repeat;
+}
+.jcarousel-skin-tango .jcarousel-next-horizontal, .jcarousel-skin-tango .jcarousel-prev-horizontal{width: 32px;height: 32px; display:block; top:-58px; position:absolute; cursor:pointer;}
+.jcarousel-skin-tango .jcarousel-next-horizontal:hover, .jcarousel-skin-tango .jcarousel-prev-horizontal:hover{ background-position: 0 -33px;}
+

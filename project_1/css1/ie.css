@@ -1,0 +1,2 @@
+.button, .news_box input, .support figure, #contact-form textarea, #contact-form input{behavior:url(js/PIE.htc);position:relative;}
+#contact-form .buttons2{ padding-top:17px;}

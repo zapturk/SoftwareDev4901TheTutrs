@@ -1,0 +1,19 @@
+nav{ position:relative; padding: 37px 0 0 0; margin-left:-1px;}
+.sf-menu>li>ul {position:absolute;top:-999em;/* left offset of submenus need to match (see below) */}
+.sf-menu ul li {width:100%}
+.sf-menu li {float:left;position:relative}
+.sf-menu>li>a{display:block;position:relative;width: 153px;font-size: 16px; line-height: 24px; color:#b4b9bb; background:url(../images/nav_a.png) no-repeat; text-align:center; padding:12px 0 11px 0; margin-left:6px;}
+.sf-menu>li:first-child>a{ margin-left:0;}
+.sf-menu>li>a:hover,.sf-menu>li.sfHover>a{color:#474c50; background-position: 0 -94px;}
+.sf-menu>li.current>a{ color:#FFFFFF;background-position:0 -47px;}
+/*================================>> 2 Level <<========================================*/
+.sf-menu li:hover ul,.sf-menu li.sfHover ul{left:9px;top:47px;width: 419px;padding:2px 0 15px 1px;/* match top ul list item height */z-index:99; background:#b5c8ce; overflow:hidden;}
+.sf-menu li.sfHover ul .column{ float:left; margin-right:1px !important; font-family:Arial, Helvetica, sans-serif;width: 138px;}
+.column .title{ width: 137px; font-size: 14px; line-height: 19px; color:#474c50; padding:14px 0 7px 16px; width: 122px; background:url(../images/title.jpg) 0 bottom repeat-x #a5b7bd;}
+.column .title span{ display:inline-block; margin-top:-5px}
+.column ul{padding:14px 0 0 6px !important; width: 129px !important;}
+.column ul li{ margin-bottom:1px;}
+.column ul a{ background:#cbd9dd; font-size: 12px; line-height: 18px; color:#677177; display:block; padding:5px 0 6px 12px;}
+.column ul a:hover{ background:#677177; color:#FFFFFF;}
+
+

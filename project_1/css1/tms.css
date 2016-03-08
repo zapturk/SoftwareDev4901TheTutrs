@@ -1,0 +1,8 @@
+.slider_bg{ background:url(../images/slider_bg.png) -41px 0 no-repeat; width: 990px; padding-left:40px;margin: 0 auto; height:420px; position:relative;}
+.slider {height: 368px; margin: 0 0 0 -1px;}
+.items {display:none}
+.pagination {position:absolute;bottom:23px; z-index:999; left:460px;}
+.pagination li {float:left;margin:0 0 0 7px;display:block;}
+.pagination li a{ background:url(../images/pagination.png) no-repeat;width:13px;height:13px;display:block}
+.pagination li.current a{ background-position: 0 -26px !important;}
+.pagination li a:hover{ background-position: 0 -13px;}

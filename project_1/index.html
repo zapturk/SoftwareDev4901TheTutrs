@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Gideon Learning Project</title>
+
+    <!-- Bootstrap -->
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	    <link rel="stylesheet" type="text/css1" media="screen" href="css1/style.css">
+	<link rel="stylesheet" href="css/core.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custome.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald"
+	<script type="text/javascript" src="js1/jquery-ui-1.8.16.custom.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Drop down menu from the top -->
+	<div class="navbar navbar-inverse navbar-fix-top"  role="navigation">
+		<div class="container"><!--<img src="images/gideon_smLogo.jpg" border="0">-->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only"> Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"> <div style="font-family: 'Oswald', serif; font-size:48px;">Gideon Learning Center</div></a>
+				
+				>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="#"><a href="#">About</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">username<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-header">logout</a></li>
+							</ul>
+					</li>											
+			</div>		
+		</div>		
+	</div>
+	
+	<!-- body starts here-->
+	 <div class="container"> 
+		<div class="row">
+		
+		
+		
+		<!-- <div class="col-sm-3" style="background-color:lavender;"> -->
+		 <div class="col-sm-3">
+		 <div class="row">
+				<div class="col-sm-3 pad">
+				<!--<a href="https://questmathandreading.webex.com/join/stanley_patterson" class="btn btn-success .btn-lg custom" role="button" target="blank" onclick="setURL('https://questmathandreading.webex.com/join/stanley_patterson')">Online Session</a>-->
+				<a href="https://questmathandreading.webex.com/join/stanley_patterson" class="action-button shadow animate green  .btn-lg custom" target="blank" role="button" onclick="setURL('https://questmathandreading.webex.com/join/stanley_patterson')">Online Session</a>
+				</div>
+			</div>
+
+			
+			<div class="row">
+				<div class="col-sm-3 pad">
+				<!--<a class="btn btn-warning .btn-lg custom" role="button" onclick="setURL('https://www.dropbox.com/1/oauth2/authorize')">Homework</a>-->
+				<a href="https://www.dropbox.com/login?cont=https%3A%2F%2Fwww.dropbox.com" target="blank"  class="action-button shadow animate yellow  .btn-lg custom" role="button" onclick="setURL('https://www.dropbox.com/login?')">Homework</a>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-3 pad">
+				<!--<a class="btn btn-success .btn-lg custom" role="button" onclick="setURL('http://shop.tokenrewards.com/#SignIn')">Reward System</a>-->
+					 <a href="#" class="action-button shadow animate green  .btn-lg custom" role="button" onclick="setURL('http://shop.tokenrewards.com/#SignIn')">Reward Program</a>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-3 pad">
+				<!--<a href="#" class="btn btn-warning .btn-lg custom" >Ni idea</a>-->
+				 <a href="#" class="action-button shadow animate yellow  .btn-lg custom" role="button">Ni idea</a>
+				</div>
+			</div>
+
+		</div> 
+
+		
+		
+		
+
+		
+		<div class="col-sm-1">	
+		</div>
+
+		
+		<div class="col-sm-8" style="background-color:lavenderblush;" >
+			  <h2>Here goes the application retrieved </h2>
+			  <div class="embed-responsive embed-responsive-16by9">
+				<iframe id="appBox" class="embed-responsive-item" src="http://www.questlearningonline.com/"></iframe>
+			  </div>
+		</div>
+		</div>
+	
+	 </div> 
+	<script>
+	function setURL(url){
+    	document.getElementById('appBox').src = url;
+	}
+	</script>
+	<!--Footer-->
+	<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+		<div class="container">
+			<div class="navbar-text pull-left">
+				<!--<p> Footer </p>-->
+			</div>
+		</div>
+		        <div class="f_right social">
+            	<a href="#" class="soc1" title="Facebook"></a>
+                <a href="#" class="soc2" title="Reddit"></a>
+                <a href="#" class="soc3" title="Twitter"></a>
+                <a href="#" class="soc4" title="RSS"></a>
+		</div>
+
+	<div id="footer_block">
+	<div class="main">
+    	<footer>
+            <div class="f_left">
+                <a href="index.html"><img src="images/gab-logo.png" width="109" height="43" alt=""></a><br>
+				&nbsp;<a style="color:#ffFFF"> ©  2016 | </a> <a href="">Gideon Learning Center</a><br>
+				
+            </div>
+            <div class="f_right social">
+            	<a href="#" class="soc1" title="Facebook"></a>
+                <a href="#" class="soc2" title="Reddit"></a>
+                <a href="#" class="soc3" title="Twitter"></a>
+                <a href="#" class="soc4" title="RSS"></a>
+            </div>
+        </footer>
+    </div>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	
+<!--==============================footer=================================-->
+
+  </body>
+</html>
