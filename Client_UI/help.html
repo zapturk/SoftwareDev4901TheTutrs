@@ -8,18 +8,19 @@
     <title>Gideon Learning Project</title>
     <style>
 	.center {
+		text-align: center;
     	margin: auto;
     	width: 70%;
     	padding: 20px;
 	}
+	
+	.header {
+		text-align: center;
+    	margin-top: 100px;
+	}
 	</style>
 
 	<style>
-	.buttonT {
-    	margin: auto;
-    	width: 250px;
-    	padding: 10px;
-	}
 	</style>
 
     <!-- Bootstrap -->
@@ -32,19 +33,32 @@
 	<script type="text/javascript" src="js1/jquery-ui-1.8.16.custom.min.js"></script>
   </head>
   <body>
+  <div class="header">
+  <p><h1>Select a room<h1></p>
+  </div>
+  
   	<div class="center">
     	<div class="col-md-10 col-md-offset-1">
-			<a href="https://questmathandreading.webex.com/join/inst1_session1" class="btn-lg btn-danger round"  role="button" target="blank"><span style="color:black;">Red Room</span></a>
-			<a href="https://questmathandreading.webex.com/join/pr1423288211723" class="btn-lg btn-warning round"  role="button" target="blank"><span style="color:black;">Orange Room</span></a>
-			<a href="https://questmathandreading.webex.com/join/pr1423072335472 " class="btn-lg btn-warning round" style="background-color:yellow;" role="button" target="blank"><span style="color:black;">Yellow Room</span></a>
-			<a href="https://questmathandreading.webex.com/join/pr1424482011670" class="btn-lg btn-warning round" style="background-color:purple;" role="button" target="blank"><span style="color:black;">Purple Room</span></a>
+			<a href="https://questmathandreading.webex.com/join/inst1_session1" onclick="ding()"><span><img src="images/red.png" alt="room-logo" style="width:120px" /></span></a>
+			<a href="https://questmathandreading.webex.com/join/pr1423288211723" onclick="ding()"><span><img src="images/orange.png" alt="room-logo" style="width:120px" /></span></a>
+			<a href="https://questmathandreading.webex.com/join/pr1423072335472" onclick="ding()"><span><img src="images/yellow.png" alt="room-logo" style="width:120px" /></span></a>
+			<a href="https://questmathandreading.webex.com/join/pr1424482011670" onclick="ding()"><span><img src="images/purple.png" alt="room-logo" style="width:120px" /></span></a>
 		</div>
 		<div class="col-md-10 col-md-offset-1" style="padding-top: 30px">
-			<a href="https://questmathandreading.webex.com/meet/pr1428438355164" class="btn-lg btn-success round"  role="button" target="blank"><span style="color:black;">Green Room</span></a>
-			<a href="https://questmathandreading.webex.com/meet/pr1424482100282" class="btn-lg btn-primary round"  role="button" target="blank"><span style="color:black;">Blue Room</span></a>
-			<a href="https://questmathandreading.webex.com/meet/pr1429224680323" class="btn-lg btn-warning round" style="background-color:violet;" role="button" target="blank"><span style="color:black;">Violet Room</span></a>
-			<a href="https://questmathandreading.webex.com/join/pr1428609292126" class="btn-lg btn-warning round" style="background-color:pink;" role="button" target="blank"><span style="color:black;">Pink Room</span></a>
+			<a href="https://questmathandreading.webex.com/meet/pr1428438355164" onclick="ding()"><span><img src="images/violet.png" alt="room-logo" style="width:120px" /></span></a>
+			<a href="https://questmathandreading.webex.com/meet/pr1424482100282" onclick="ding()"><span><img src="images/blue.png" alt="room-logo" style="width:120px" /></span></a>
+			<a href="https://questmathandreading.webex.com/meet/pr1429224680323" onclick="ding()"><span><img src="images/green.png" alt="room-logo" style="width:120px" /></span></a>
+			<a href="https://questmathandreading.webex.com/join/pr1428609292126" onclick="ding()"><span><img src="images/pink.png" alt="room-logo" style="width:120px" /></span></a>
 		</div>
 	</div>
+	
+  <script>
+      function ding(){
+       var audio = document.getElementById("audio");
+       audio.play();
+                 }
+  </script>
+  
+   <audio id="audio" src="sounds/click2.mp3" ></audio>
   </body>
 </html>

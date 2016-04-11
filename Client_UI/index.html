@@ -19,21 +19,9 @@
  <nav class="navbar navbar-new" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
-			<a class="navbar-brand" href="#"><img src="images/logo1.png" alt="logo" style="width:77px" /></a>
-			<a id="slogan" href="#"><img src="images/slogan.png" alt="slogan" style="width:400px" /></a>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse navbar-right" id="navbar1">
-            <ul class="nav navbar-nav">
-                <li><a href="#"><span class="glyphicon glyphicon-exclamation-sign"></span> Help</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
-            </ul>
+			<a class="navbar-brand"><img src="images/logo2.png" alt="logo" style="width:180px" /></a>
+			
+			<a onclick="swoosh()" href="#myModal" class="btn btn-danger round" role="button" data-toggle="modal"><span class="glyphicon glyphicon-info-sign"></span></a>	
         </div>
     </div>
  </nav>
@@ -42,18 +30,48 @@
 	<iframe src="http://www.thegideonfoundation.org/#!about_us/csgz" name="iframe_a" frameborder="0" style="width:100%; height:900px"></iframe>
  </div>
 
+
+
  <div class="footer">
 	<div class="col-md-10 col-md-offset-1">
 		<!-- Those are dummy websites for the demo. I wanted everything to remain in the iframe -->
-		<a href="intent://folder?id=0&url=https%3A%2F%2Fm.box.com%2Fbrowse%2F0#Intent;scheme=boxopendirect;action=android.intent.action.VIEW;end" class="btn btn-warning round" role="button"><span class="glyphicon glyphicon-pencil"></span></a>
-		<a href="help.html" target="iframe_a" class="btn btn-warning round" role="button"><span class="glyphicon glyphicon-facetime-video"></span></a>
-		<a href="http://shop.tokenrewards.com/#AutoLogin_kdgua8s7fbpx4jze659r" target="iframe_a" class="btn btn-warning round" role="button"><span class="glyphicon glyphicon-star"></span></a>
-		<a href="#" class="btn btn-warning round" target="iframe_a" role="button"><span class="glyphicon glyphicon-envelope"></span></a>
-		<a href="https://live.amcharts.com/" target="iframe_a" class="btn btn-warning round" role="button"><span class="glyphicon glyphicon-stats"></span></a>
-	</div>
+		<a onclick="play()" href="intent://folder?id=0&url=https%3A%2F%2Fm.box.com%2Fbrowse%2F0#Intent;scheme=boxopendirect;action=android.intent.action.VIEW;end" class="btn btn-warning round" role="button"><span class="glyphicon glyphicon-pencil"></span></a>
+		<a onclick="play()" href="help.html" target="iframe_a" class="btn btn-warning round" role="button"><span class="glyphicon glyphicon-facetime-video"></span></a>
+		<a onclick="play()" href="http://shop.tokenrewards.com/#AutoLogin_kdgua8s7fbpx4jze659r" target="iframe_a" class="btn btn-warning round" role="button"><span class="glyphicon glyphicon-star"></span></a>
+		<a onclick="play()" href="#" class="btn btn-warning round" target="iframe_a" role="button"><span class="glyphicon glyphicon-envelope"></span></a>
+		<a onclick="play()" href="https://live.amcharts.com/" target="iframe_a" class="btn btn-warning round" role="button"><span class="glyphicon glyphicon-stats"></span></a>		
  </div>
+ 
+ 
+  <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
-
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Button Description</h4>
+      </div>
+      <div class="modal-body">
+        <p>describe the buttons.</p>
+      </div>
+</div>
+ 
+  <script>
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+                 }
+				 
+    function swoosh(){
+       var audio = document.getElementById("audio2");
+       audio.play();
+                 }
+   </script>
+   
+ <audio id="audio" src="sounds/click.mp3" ></audio>
+ <audio id="audio2" src="sounds/swoosh.mp3" ></audio>
 
  <script src="js/jquery.min.js"></script>
  <script src="js/bootstrap.min.js"></script>
